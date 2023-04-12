@@ -13,3 +13,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.vortexWrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  color: red;
+}
