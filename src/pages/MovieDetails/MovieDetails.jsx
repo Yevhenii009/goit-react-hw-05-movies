@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { Loader } from 'components/Loader/Loader';
 import axios from 'axios';
 import css from './MovieDetails.module.css';
-import noPoster from '../../images/no-poster.jpg';
+import noPoster from '../../images/no-photo.jpg';
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -59,9 +59,9 @@ const MovieDetails = () => {
 
   const {
     poster_path,
+    title,
     original_title,
     release_date,
-    title,
     vote_average,
     overview,
     genres,
@@ -80,7 +80,7 @@ const MovieDetails = () => {
   return (
     <main>
       <Link className={css.btnBack} type="button" to={backLinkHref}>
-        &#x21e6; Go Back
+         Go Back
       </Link>
 
       {isLoading && <Loader />}

@@ -2,10 +2,10 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-
 import { Loader } from 'components/Loader/Loader';
+import noPoster from '../../images/no-photo.jpg';
 import css from '../../index.css';
-import noPoster from '../../images/no-poster.jpg';
+
 
 const Cast = () => {
   const { movieId } = useParams();
@@ -71,8 +71,7 @@ const Cast = () => {
               src={
                 profile_path
                   ? `https://image.tmdb.org/t/p/w500/${profile_path}`
-                  : noPoster
-              }
+                  : noPoster}
               alt={original_name}
               width={150}
             />
